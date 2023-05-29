@@ -26,5 +26,5 @@ RUN flutter channel stable
 RUN flutter upgrade
 RUN flutter doctor
 
-RUN git clone https://github.com/KING-CYBERTON/flutter_phone_test.git
+RUN git clone https://github.com/KING-CYBERTON/auth_ui.git
 RUN cd flutter_phone_test && flutter run
