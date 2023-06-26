@@ -1,8 +1,8 @@
+import 'package:auth_ui/views/Signup.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:auth_ui/Constraits/CustomText.dart';
 import 'package:get/get.dart';
-
 
 class LoginInPage extends StatefulWidget {
   const LoginInPage({super.key});
@@ -40,7 +40,7 @@ class _LoginInPageState extends State<LoginInPage> {
                 )
               ],
               border: Border.all(
-                color: Color.fromARGB(255, 139, 51, 103),
+                color: const Color.fromARGB(255, 139, 51, 103),
                 width: 2,
               ),
               borderRadius: BorderRadius.circular(11),
@@ -89,9 +89,9 @@ class _LoginInPageState extends State<LoginInPage> {
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white10,
-                    shadowColor: Color.fromARGB(26, 81, 160, 180),
+                    shadowColor: const Color.fromARGB(26, 81, 160, 180),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Log In',
                     style: TextStyle(
                       fontSize: 18,
@@ -119,7 +119,7 @@ class _LoginInPageState extends State<LoginInPage> {
                             ),
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
-                                Get.toNamed('/signup');
+                                Get.to(const SignUpPage());
                               })
                       ],
                     )),
