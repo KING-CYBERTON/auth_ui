@@ -1,8 +1,5 @@
-
-import 'package:auth_ui/Views/welcome.dart';
+import 'package:auth_ui/views/Login.dart';
 import 'package:flutter/material.dart';
-import 'package:auth_ui/Views/Login.dart';
-import 'package:auth_ui/Views/SignUp.dart';
 import 'package:get/get.dart';
 
 void main() async {
@@ -10,24 +7,13 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Tree Life',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      getPages: [
-
-        GetPage(name: '/login', page: () => const LoginInPage()),
-        GetPage(name: '/signup', page: () => const SignUpPage()),
-        GetPage(name: '/Welcome', page: () => WelcomePage()),
-      ],
-      initialRoute: '/',
+      title: 'Auth UI',
+      home: LoginInPage(),
     );
   }
 }
