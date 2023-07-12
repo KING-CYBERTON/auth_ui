@@ -80,8 +80,8 @@ class _SignUpPageState extends State<SignUpPage> {
                 const SizedBox(width: 60),
                 ElevatedButton(
                     onPressed: () {
-                      // GetAuth.instance.createUser(emailController.text.trim(),
-                      //     passwordController.text.trim());
+                   //   GetAuth.instance.createUser(emailController.text.trim(),
+                   //       passwordController.text.trim());
                     },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.white10,
@@ -117,7 +117,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 )),
                 GestureDetector(
                   onTap: () {
-                    // GetAuth.instance.signInWithGoogle();
+                   // GetAuth.instance.signInWithGoogle();
                   },
                   child: const CircleAvatar(
                     backgroundColor: Colors.white10,
