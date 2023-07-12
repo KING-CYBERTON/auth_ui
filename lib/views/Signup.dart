@@ -16,6 +16,7 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+         resizeToAvoidBottomInset: false,
       
         body: SafeArea(
             child: Center(
@@ -109,7 +110,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         ),
                         recognizer: TapGestureRecognizer()
                           ..onTap = () {
-                            Get.toNamed('/login');
+                            Get.to(LogInPage());
                           })
                   ],
                 )),
