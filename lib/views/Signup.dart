@@ -111,7 +111,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         ),
                         recognizer: TapGestureRecognizer()
                           ..onTap = () {
-                            Get.to(LogInPage());
+                            Get.to(LoginInPage());
                           })
                   ],
                 )),
