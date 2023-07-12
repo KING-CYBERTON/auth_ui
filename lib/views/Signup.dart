@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:auth_ui/Constraits/CustomText.dart';
-import 'package:auth_ui/Views/Login.dart';
+import 'package:auth_ui/views/Login.dart';
 import 'package:get/get.dart';
 
 class SignUpPage extends StatefulWidget {
