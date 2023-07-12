@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:auth_ui/Constraits/CustomText.dart';
 import 'package:get/get.dart';
 
+
 class LoginInPage extends StatefulWidget {
   const LoginInPage({super.key});
 
@@ -40,7 +41,7 @@ class _LoginInPageState extends State<LoginInPage> {
                 )
               ],
               border: Border.all(
-                color: const Color.fromARGB(255, 139, 51, 103),
+                color: Color.fromARGB(255, 139, 51, 103),
                 width: 2,
               ),
               borderRadius: BorderRadius.circular(11),
@@ -84,14 +85,14 @@ class _LoginInPageState extends State<LoginInPage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    // GetAuth.instance.logInUser(emailController.text.trim(),
-                    //     passwordController.text.trim());
+                  //  GetAuth.instance.logInUser(emailController.text.trim(),
+                       // passwordController.text.trim());
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white10,
-                    shadowColor: const Color.fromARGB(26, 81, 160, 180),
+                    shadowColor: Color.fromARGB(26, 81, 160, 180),
                   ),
-                  child: const Text(
+                  child: Text(
                     'Log In',
                     style: TextStyle(
                       fontSize: 18,
@@ -119,7 +120,7 @@ class _LoginInPageState extends State<LoginInPage> {
                             ),
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
-                                Get.to(const SignUpPage());
+                                Get.toNamed('/signup');
                               })
                       ],
                     )),
@@ -127,7 +128,7 @@ class _LoginInPageState extends State<LoginInPage> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    // GetAuth.instance.signInWithGoogle();
+                  //  GetAuth.instance.signInWithGoogle();
                   },
                   child: const CircleAvatar(
                     backgroundColor: Colors.white10,
@@ -152,8 +153,8 @@ class _LoginInPageState extends State<LoginInPage> {
                             ),
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
-                                // GetAuth.instance
-                                //     .resetPassword(emailController.text.trim());
+                            //    GetAuth.instance
+                                  //  .resetPassword(emailController.text.trim());
                               })
                       ],
                     )),
