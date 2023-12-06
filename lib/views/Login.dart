@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:auth_ui/Constraits/CustomText.dart';
 import 'package:get/get.dart';
 
-
 class LoginInPage extends StatefulWidget {
   const LoginInPage({super.key});
 
@@ -82,8 +81,7 @@ class _LoginInPageState extends State<LoginInPage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                  //  GetAuth.instance.logInUser(emailController.text.trim(),
-                       // passwordController.text.trim());
+                   
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white10,
@@ -124,9 +122,7 @@ class _LoginInPageState extends State<LoginInPage> {
                   ],
                 ),
                 GestureDetector(
-                  onTap: () {
-                  //  GetAuth.instance.signInWithGoogle();
-                  },
+                  onTap: () {},
                   child: const CircleAvatar(
                     backgroundColor: Colors.white10,
                     radius: 30,
@@ -148,11 +144,7 @@ class _LoginInPageState extends State<LoginInPage> {
                               color: Colors.red,
                               fontWeight: FontWeight.bold,
                             ),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                            //    GetAuth.instance
-                                  //  .resetPassword(emailController.text.trim());
-                              })
+                            recognizer: TapGestureRecognizer()..onTap = () {})
                       ],
                     )),
                   ],

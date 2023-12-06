@@ -17,8 +17,7 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-         resizeToAvoidBottomInset: false,
-      
+        resizeToAvoidBottomInset: false,
         body: SafeArea(
             child: Center(
           child: Container(
@@ -80,8 +79,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 const SizedBox(width: 60),
                 ElevatedButton(
                     onPressed: () {
-                   //   GetAuth.instance.createUser(emailController.text.trim(),
-                   //       passwordController.text.trim());
+                 
                     },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.white10,
@@ -91,7 +89,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       'Sign Up',
                       style: TextStyle(
                         fontSize: 18,
-                        color: Color(0xffc519cb),
+                        color: Colors.red,
                       ),
                     )),
 
@@ -117,7 +115,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 )),
                 GestureDetector(
                   onTap: () {
-                   // GetAuth.instance.signInWithGoogle();
+                    // GetAuth.instance.signInWithGoogle();
                   },
                   child: const CircleAvatar(
                     backgroundColor: Colors.white10,
